@@ -10,10 +10,9 @@ import RemoveRedEyeIcon from "@mui/icons-material/RemoveRedEye";
 import {
   colorPrimario,
   colorSecundario,
-  tipografiaPrincipal,
 } from "./auxiliares";
 
-const Tarjeta = ({ tituloTarjeta, imagenTarjeta, linkTarjeta }) => {
+const Tarjetas = ({ tituloTarjetas, imagenTarjetas, linkTarjetas }) => {
   return (
     <Card
       sx={{
@@ -29,7 +28,7 @@ const Tarjeta = ({ tituloTarjeta, imagenTarjeta, linkTarjeta }) => {
       <CardMedia
         component="img"
         height="250"
-        image={imagenTarjeta}
+        image={imagenTarjetas}
         alt="afiche pelicula"
       />
       <CardContent>
@@ -43,15 +42,14 @@ const Tarjeta = ({ tituloTarjeta, imagenTarjeta, linkTarjeta }) => {
             textOverflow: "ellipsis",
             overflow: "hidden",
             textAlign: "center",
-            fontFamily: tipografiaPrincipal,
             fontWeight: "600",
           }}
         >
-          {tituloTarjeta}
+          {tituloTarjetas}
         </Typography>
       </CardContent>
       <CardActions sx={{ justifyContent: "center" }}>
-        <Link to={linkTarjeta}>
+        <Link to={linkTarjetas}>
           <IconButton style={{ color: colorPrimario }}>
             <RemoveRedEyeIcon />
           </IconButton>
@@ -61,4 +59,4 @@ const Tarjeta = ({ tituloTarjeta, imagenTarjeta, linkTarjeta }) => {
   );
 };
 
-export default Tarjeta;
+export default Tarjetas;

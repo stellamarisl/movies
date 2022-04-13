@@ -4,9 +4,8 @@ import MenuItem from "@mui/material/MenuItem";
 import { Box, IconButton } from "@mui/material";
 import MenuIcon from "@mui/icons-material/Menu";
 import { Link } from "react-router-dom";
-import {
-  colorTipografiaPrimario,
-} from "./auxiliares";
+import { colorTipografiaPrimario } from "./auxiliares";
+  
 
 const MenuDesplegable = () => {
   const [anchorEl, setAnchorEl] = React.useState(null);

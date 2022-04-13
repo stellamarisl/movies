@@ -1,7 +1,7 @@
 import { Box } from "@mui/material";
-import PeliculasNuevasYPopulares from "./PeliculasNuevasYPolulares";
+import PeliculasNuevasYPopulares from "./PeliculasNuevasYPopulares";
 import { useState, useEffect } from "react";
-import { baseUrl, apiKey } from "./auxiliares/auxiliares";
+import { baseUrl, apiKey } from "./auxiliares";
 
 const Populares = () => {
   const [peliculas, setPeliculas] = useState([]);

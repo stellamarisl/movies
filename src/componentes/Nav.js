@@ -7,9 +7,8 @@ import Button from "@mui/material/Button";
 import {
   colorPrimario,
   colorTipografiaPrimario,
-  tipografiaPrincipal,
-} from ".auxiliares";
-import MenuDesplagable from "./MenuDesplegable";
+} from "./auxiliares";
+import MenuDesplegable from "./MenuDesplegable";
 
 const Nav = () => {
   return (
@@ -25,19 +24,18 @@ const Nav = () => {
           <Box sx={{ display: "flex" }}>
             <Link to="/">
               <Box sx={{ width: 100, mr: 2 }}>
-                <img src="pochoclo.png" alt="pochochlo"/>
               </Box>
             </Link>
 
             <Typography
               sx={{
-                fontFamily: tipografiaPrincipal,
+                fontFamily: "Roboto",
                 color: colorTipografiaPrimario,
                 fontWeight: "600",
                 fontSize: {
                   xs: "20px",
                   sm: "24px",
-                  md: "38px",
+                  md: "30px",
                 },
                 marginTop: {
                   xs: 4,
@@ -65,7 +63,7 @@ const Nav = () => {
                 style={{
                   textDecoration: "none",
                   color: colorTipografiaPrimario,
-                  fontFamily: tipografiaPrincipal,
+                  fontFamily: "Roboto",
                   fontSize: "20px",
                 }}
               >
@@ -79,7 +77,7 @@ const Nav = () => {
                 style={{
                   textDecoration: "none",
                   color: colorTipografiaPrimario,
-                  fontFamily: tipografiaPrincipal,
+                  fontFamily: "Roboto",
                   fontSize: "20px",
                 }}
               >
@@ -93,7 +91,7 @@ const Nav = () => {
                 style={{
                   textDecoration: "none",
                   color: colorTipografiaPrimario,
-                  fontFamily: tipografiaPrincipal,
+                  fontFamily: "Roboto",
                   fontSize: "20px",
                 }}
               >
@@ -101,13 +99,14 @@ const Nav = () => {
               </Link>
             </Button>
 
+            
             <Button>
               <Link
                 to="/buscar"
                 style={{
                   textDecoration: "none",
                   color: colorTipografiaPrimario,
-                  fontFamily: tipografiaPrincipal,
+                  fontFamily: "Roboto",
                   fontSize: "20px",
                 }}
               >
@@ -125,7 +124,7 @@ const Nav = () => {
               },
             }}
           >
-            <MenuDesplagable />
+            <MenuDesplegable />
           </Box>
         </Toolbar>
       </AppBar>

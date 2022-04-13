@@ -1,6 +1,5 @@
-import React from "react";
-import Carousel from "react-material-ui-carousel";
 import { useEffect, useState } from "react";
+import Carousel from "react-material-ui-carousel";
 //import { baseUrl, apiKey } from "./auxiliares/";
 import ItemCarrousel from "./ItemCarrousel";
 
@@ -9,7 +8,7 @@ const Carrousel = () => {
   const [peliculas, setPeliculas] = useState([]);
 
   useEffect(() => {
-    fetch(`"https://api.themoviedb.org/3/movie/now_playing?api_key=44afdc40a26fe041c14d3b79b8370ea3&language=es-AR&page=1`)
+    fetch("https://api.themoviedb.org/3/movie/now_playing?api_key=44afdc40a26fe041c14d3b79b8370ea3&language=es-AR&page=1")
       .then((res) => res.json())
       .then((data) => setPeliculas(data.results));
   }, []);
@@ -31,3 +30,8 @@ const Carrousel = () => {
 };
 
 export default Carrousel;
+
+
+
+
+    

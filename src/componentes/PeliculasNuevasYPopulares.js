@@ -1,5 +1,5 @@
 import { Box } from "@mui/material";
-import Tarjeta from "./Tarjeta";
+import Tarjetas from "./Tarjetas";
 import * as React from "react";
 import ArrowBackIosNewOutlinedIcon from "@mui/icons-material/ArrowBackIosNewOutlined";
 import ArrowForwardIosOutlinedIcon from "@mui/icons-material/ArrowForwardIosOutlined";
@@ -7,7 +7,6 @@ import Typography from "@mui/material/Typography";
 import {
   colorPrimario,
   colorTipografiaPrimario,
-  tipografiaPrincipal,
 } from "./auxiliares";
 import IconButton from "@mui/material/IconButton";
 
@@ -52,11 +51,11 @@ const PeliculasNuevasYPopulares = ({
         }}
       >
         {peliculas.map((pelicula) => (
-          <Tarjeta
+          <Tarjetas
             key={pelicula.id}
-            tituloTarjeta={pelicula.title}
-            imagenTarjeta={`https://image.tmdb.org/t/p/w200/${pelicula.poster_path}`}
-            linkTarjeta={`/detalle-pelicula/${pelicula.id}`}
+            tituloTarjetas={pelicula.title}
+            imagenTarjetas={`https://image.tmdb.org/t/p/w200/${pelicula.poster_path}`}
+            linkTarjetas={`/detalle-pelicula/${pelicula.id}`}
           />
         ))}
       </Box>
@@ -80,7 +79,7 @@ const PeliculasNuevasYPopulares = ({
           variant="h6"
           gutterBottom
           component="div"
-          sx={{ m: 2, fontFamily: tipografiaPrincipal }}
+          sx={{ m: 2, fontFamily: "Roboto" }}
         >
           Pagina {pagina}
         </Typography>

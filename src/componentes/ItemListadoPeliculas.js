@@ -11,9 +11,9 @@ import Avatar from "@mui/material/Avatar";
 import {
   colorPrimario,
   colorSecundario,
-  tipografiaPrincipal,
 } from "./auxiliares";
 import { IconButton } from "@mui/material";
+import { fontFamily } from "@mui/system";
 
 
 const ItemListadoPelicula = ({ tituloItem, imagenItem, linkIcono }) => {
@@ -43,7 +43,7 @@ const ItemListadoPelicula = ({ tituloItem, imagenItem, linkIcono }) => {
           </ListItemAvatar>
           <ListItemText
             primary={tituloItem}
-            sx={{ fontFamily: tipografiaPrincipal }}
+            sx={{ fontFamily }}
           />
           <Link to={linkIcono}>
             <IconButton style={{ color: colorPrimario }}>

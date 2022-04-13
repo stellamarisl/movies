@@ -1,5 +1,5 @@
 import { Box } from "@mui/system";
-import PeliculasNuevasYPopulares from "./PeliculasNuevasYPolulares";
+import PeliculasNuevasYPopulares from "./PeliculasNuevasYPopulares";
 import { useState, useEffect } from "react";
 import { baseUrl, apiKey } from "./auxiliares";
 

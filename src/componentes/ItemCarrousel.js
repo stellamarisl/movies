@@ -67,7 +67,7 @@ const ItemCarrousel = ({
               lg: "20px",
               xl: "20px",
             },
-            fontFamily: "Poiret One",
+            fontFamily: "Roboto",
           }}
         >
           {descripcionSlider}

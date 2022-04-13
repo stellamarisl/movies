@@ -3,7 +3,7 @@ import { TextField } from "@mui/material";
 import { useSearchParams } from "react-router-dom";
 import { useEffect, useState } from "react";
 import { apiKey} from "./auxiliares";
-import Tarjeta from "./Tarjeta";
+import Tarjetas from "./Tarjetas";
 
 
 
@@ -74,11 +74,11 @@ const Buscador = () => {
           {peliculas &&
             peliculas.map((pelicula) => {
               return (
-                <Tarjeta
+                <Tarjetas
                   key={pelicula.id}
-                  tituloTarjeta={pelicula.title}
-                  imagenTarjeta={`https://image.tmdb.org/t/p/w200/${pelicula.poster_path}`}
-                  linkTarjeta={`/detalle-pelicula/${pelicula.id}`}
+                  tituloTarjetas={pelicula.title}
+                  imagenTarjetas={`https://image.tmdb.org/t/p/w200/${pelicula.poster_path}`}
+                  linkTarjetas={`/detalle-pelicula/${pelicula.id}`}
                 />
               );
             })}

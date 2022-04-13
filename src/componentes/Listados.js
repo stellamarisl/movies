@@ -7,7 +7,6 @@ import {
   baseUrl,
   apiKey,
   colorTipografiaPrimario,
-  tipografiaPrincipal,
 } from "./auxiliares";
 
 
@@ -36,7 +35,7 @@ const Listados = ({ tituloListado, urlListado }) => {
             bgcolor: colorPrimario,
             color: colorTipografiaPrimario,
             p: 3,
-            fontFamily: tipografiaPrincipal,
+            fontFamily: "Roboto",
             fontWeight: "600",
             fontSize: {
               xs: "18px",

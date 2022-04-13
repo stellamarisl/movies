@@ -4,7 +4,7 @@ import { useState, useEffect } from "react";
 import { useParams } from "react-router-dom";
 import {
   baseUrl, apiKey, colorPrimario, colorTipografiaPrimario,
-} from ".auxiliares";
+} from "./auxiliares";
 import MovieCreationIcon from "@mui/icons-material/MovieCreation";
 import { Chip } from "@mui/material";
 
