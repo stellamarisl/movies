@@ -1,11 +1,11 @@
 import { BrowserRouter, Routes, Route } from "react-router-dom";
 import Nav from "./componentes/Nav";
 import Main from "./componentes/Main";
-//import Footer from "./componentes/Footer";
 import UltimosLanzamientos from "./componentes/UltimosLanzamientos";
 import Populares from "./componentes/Populares";
 import Buscador from "./componentes/Buscador";
 import DetallePelicula from "./componentes/DetallePelicula";
+<script src="~bulma-carousel/dist/js/bulma-carousel.min.js"></script>
 
 const App = () => {
   return (

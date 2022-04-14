@@ -9,6 +9,7 @@ import {
   colorTipografiaPrimario,
 } from "./auxiliares";
 import MenuDesplegable from "./MenuDesplegable";
+import { GiFilmSpool } from "react-icons/gi";
 
 const Nav = () => {
   return (
@@ -31,7 +32,7 @@ const Nav = () => {
               sx={{
                 fontFamily: "Roboto",
                 color: colorTipografiaPrimario,
-                fontWeight: "600",
+                fontWeight: "400",
                 fontSize: {
                   xs: "20px",
                   sm: "24px",
@@ -44,6 +45,8 @@ const Nav = () => {
                 },
               }}
             >
+              <GiFilmSpool/>
+              <></>
               Buscador de Películas
             </Typography>
           </Box>

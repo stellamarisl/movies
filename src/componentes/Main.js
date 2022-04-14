@@ -2,7 +2,6 @@ import { Box } from "@mui/material";
 import Carrousel from "./Carrousel";
 import Listados from "./Listados";
 import Footer from "./Footer";
-import '../node_modules/bootstrap/dist/css/bootstrap.min.css';
  
  
 const Main = () => {
@@ -29,3 +28,5 @@ const Main = () => {
 };
 
 export default Main;
+
+

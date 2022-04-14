@@ -14,7 +14,7 @@ const ItemCarrousel = ({
   linkCarrousel,
 }) => {
   return (
-    <Box
+    <Box id="imgcarrousel"
       sx={{
         backgroundImage: `url(${imagenSlider})`,
         backgroundRepeat: "no-repeat",
@@ -23,7 +23,7 @@ const ItemCarrousel = ({
         backgroundSize: "cover",
         backgroundPosition: "50% 30%",
         display: "flex",
-        flexDirection: "column",
+        flexDirection: "row",
         alignItems: "center",
         justifyContent: "center",
       }}
@@ -31,7 +31,7 @@ const ItemCarrousel = ({
       <Box
         sx={{
           display: "flex",
-          flexDirection: "column",
+          flexDirection: "row",
           alignItems: "center",
           justifyContent: "center",
           width: "80%",
