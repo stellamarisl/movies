@@ -2,6 +2,8 @@ import React from "react";
 import { useEffect, useState } from "react";
 import ItemCarrousel from "./ItemCarrousel";
 
+
+
 const Carrousel = () => {
  
     const [peliculas, setPeliculas] = useState([]);
@@ -12,21 +14,27 @@ const Carrousel = () => {
     }, []);
 
     return (
-        <div id="carousel-demo" className="carousel" data-slides-to-scroll="2">
-            <div  id="item-1"className="item-1">
-                {peliculas.map((pelicula) => (
-                    <ItemCarrousel
+    <div  className="carousel" data-slides-to-scroll="2">
+            <div  className="item-1" id="item-1">
+                    {peliculas.map((pelicula) => (
+                        <ItemCarrousel
                         key={pelicula.id}
                         tituloSlider={pelicula.title}
                         imagenSlider={`https://image.tmdb.org/t/p/original/${pelicula.backdrop_path}`}
                         descripcionSlider={pelicula.overview}
                         linkCarrousel={`/detalle-pelicula/${pelicula.id}`}
                     />
-                ))}
-            </div>
-        </div>
-     
-    )};
-
-
+                   
+					))}
+				 </div>
+			</div>
+      )};   
+        
+ 
 export default Carrousel;
+
+
+
+
+ 
+

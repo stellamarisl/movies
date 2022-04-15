@@ -15,7 +15,7 @@ const ItemCarrousel = ({
 }) => {
   return (
     <Box id="imgcarrousel"
-      sx={{
+     sx={{
         backgroundImage: `url(${imagenSlider})`,
         backgroundRepeat: "no-repeat",
         width: "100%",
@@ -39,7 +39,8 @@ const ItemCarrousel = ({
           color: colorTipografiaPrimario,
           opacity: [0.9, 0.8, 0.7],
           borderRadius: "5px",
-        }}
+
+}}
       >
         <Typography
           p={2}
